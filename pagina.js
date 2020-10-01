@@ -31,7 +31,7 @@ function validarForm(){
     }
 
     if(isNaN(telefone)== true){
-        alert("O telefone precisa ser formado por numeros");
+        alert("O telefone precisa ser formado por números");
         ancora.telefone.focus();
         return false;
     }else{
