@@ -107,7 +107,18 @@ form label{
 }
 
 .enviar{  
-    width: 40%; 
+    width: 20%; 
+    padding: 15px 0; 
+    background: orange;
+    color: white; 
+    font-weight: bold; 
+    font-size: 18px;
+    border: none; 
+    border-radius: 5px; 
+}
+
+.resetar{
+    width: 20%; 
     padding: 15px 0; 
     background: orange;
     color: white; 

@@ -8,12 +8,14 @@
         <link rel="stylesheet"  href="style.css">
         <link rel="stylesheet" href="reset.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!-- Usando fonte externa -->
-    </head>
+
+</head>
 
     <body>
         <header>
 			<div class="caixa">
-				<h1><a href="pagina.html"><img class="logo" src="logo-ft.png" alt="Logo da FURB"> </a></h1>
+                <h1><a href="pagina.html"><img class="logo" src="logo-ft.png" alt="Logo da FURB"> </a></h1>
+                <script src="pagina.js"></script>
 				<nav class="menu">
 					<ul>
                         <li><a href="pagina.html">Home</a></li>
@@ -39,16 +41,16 @@
     <h4 class="titulo-principal"> Entre em contato conosco</h4>
         <form id="ancora">  <!-- criando formulario para entrada de dados -->
             <label for="nomesobrenome">Nome e Sobrenome</label>
-            <input type="text" id="nomesobrenome" class="input-padrao" required> 
+            <input type="text" id="nomesobrenome" class="input-padrao" > 
 
             <label for="email">Email</label>  
-            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"> 
+            <input type="email" id="email" class="input-padrao"  placeholder="seuemail@dominio.com"> 
 
             <label for="telefone">Telefone</label>       
-            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX"> 
+            <input type="tel" id="telefone" class="input-padrao"  placeholder="(XX)XXXXX-XXXX"> 
 
             <label for="mensagem">Mensagem</label>
-            <textarea cols="70" rows="10" id="mensagem"  class="input-padrao" required ></textarea>  
+            <textarea cols="70" rows="10" id="mensagem"  class="input-padrao"  ></textarea>  
        
         <fieldset> 
             <legend class="teste" id="teste">Como prefere o nosso contato</legend> 
@@ -60,7 +62,9 @@
 
         <label class="checkbox"> <input type="checkbox" checked> Gostaria de receber nossas novidades por email?</label> 
             
-        <input type="submit" value="Enviar formulário" class="enviar"> 
+        <input type="submit" value="Enviar formulário" class="enviar" onclick="return validarForm()"> 
+        
+        <input type="reset" value="Limpar Formulario" class="resetar">
         </form>
    </main>
         <footer>
