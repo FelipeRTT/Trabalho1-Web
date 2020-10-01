@@ -22,8 +22,16 @@ function validarForm(){
         formCorreto = true;
     }
 
-    if(telefone == ""){
+    if(telefone == "" ){
         alert("Campo telefone é obrigatorio");
+        ancora.telefone.focus();
+        return false;
+    }else{
+        formCorreto = true;
+    }
+
+    if(isNaN(telefone)== true){
+        alert("O telefone precisa ser formado por numeros");
         ancora.telefone.focus();
         return false;
     }else{
